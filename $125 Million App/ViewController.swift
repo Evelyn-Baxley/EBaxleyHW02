@@ -8,7 +8,13 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var userInput: UITextField!
+    @IBOutlet weak var resultsLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func convertButtonPressed(_ sender: UIButton) {
+        
+        
+        let miles = Double(userInput.text!)
+        
+        if let miles = miles {
+            let km = miles * 1.6
+            resultsLabel.text = "\(miles) miles = \(km) kilometers"
+        } else {
+            resultsLabel.text = "\(userInput.text!) is not a valid number."
+        }
+    }
 
+    
+    
+    
+    
 }
 
