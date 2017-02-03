@@ -47,7 +47,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7a6-yF-KoQ">
                                 <rect key="frame" x="125" y="82" width="70" height="30"/>
@@ -60,8 +60,8 @@
                                     <action selector="convertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtL-4n-Txg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-r4-3BC">
-                                <rect key="frame" x="16" y="122" width="288" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-r4-3BC">
+                                <rect key="frame" x="16" y="122" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                             <constraint firstItem="j8N-3s-3f7" firstAttribute="leading" secondItem="4JS-Im-cF2" secondAttribute="trailing" constant="8" symbolic="YES" id="1t5-Fd-J2M"/>
                             <constraint firstItem="Hno-P8-KQy" firstAttribute="centerX" secondItem="7a6-yF-KoQ" secondAttribute="centerX" id="8ah-qj-U1V"/>
                             <constraint firstItem="7a6-yF-KoQ" firstAttribute="top" secondItem="4JS-Im-cF2" secondAttribute="bottom" constant="8" symbolic="YES" id="F3q-wU-59g"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RSh-r4-3BC" secondAttribute="bottom" constant="365" id="FQh-XV-gkX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RSh-r4-3BC" secondAttribute="bottom" constant="365" id="FQh-XV-gkX"/>
                             <constraint firstItem="4JS-Im-cF2" firstAttribute="centerY" secondItem="j8N-3s-3f7" secondAttribute="centerY" id="JNV-5j-MRL"/>
                             <constraint firstItem="Hno-P8-KQy" firstAttribute="trailing" secondItem="RSh-r4-3BC" secondAttribute="trailing" id="Nta-BX-RcO"/>
                             <constraint firstItem="RSh-r4-3BC" firstAttribute="top" secondItem="7a6-yF-KoQ" secondAttribute="bottom" constant="10" id="VT1-O4-EYm"/>
